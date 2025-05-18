@@ -1,0 +1,234 @@
+body {
+  font-family:'Microsoft JhengHei', sans-serif;
+  background-color: #fef9ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d1c4e9;
+  padding: 20px 0 10px 0;
+  border-bottom: 4px solid #9575cd;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.4em;
+  color: #4a148c;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.4em;
+  color: #4a148c;
+}
+
+main h2 {
+  text-align: left;
+  margin-left: -125px; /* 或依實際情況微調 */
+  }
+
+  main p {
+    text-align: left;
+    margin-left: -125px;
+    font-size:19px
+  }
+  
+  main img {
+    text-align: left;
+    margin-left: -125px;  
+  }
+  
+nav ul.navber {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+nav ul.navber li{
+  position: relative;
+}
+
+nav ul.navber li.dropdown {
+  position: relative;
+  padding-bottom: 16px; 
+}
+
+nav ul.navber li a {
+  text-decoration: none;
+  color: #d86fa3;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+nav ul.navber li a:hover {
+  background-color: #e9a9c2;
+  color: white;
+  border-radius: 6px;
+}
+
+/* 美食餐廳下拉 */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display:none;
+  position: absolute;
+  background: #fef9ff;
+  border: 1px solid #f3b3cf;
+  border-radius: 14px;
+  top: 35px;
+  left: 0;
+  padding: 10px 16px;
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu ul li a:hover {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ffe6f0;
+  border-radius: 8px;
+}
+
+/* 以下為遊樂設施的下拉 */
+
+.dropdown-menu.two-column {
+  display: none;
+  position: absolute;
+  background-color: #fef9ff;
+  border: 1px solid #f3b3cf;
+  border-radius: 12px;
+  top: 35px;
+  left: 0;
+  padding: 6px 12px;
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: row;
+  justify-content: space-between;  
+  gap: 8px;
+}
+
+.dropdown:hover > .dropdown-menu.two-column {
+  display:flex;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-image: none !important;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #c25fa5;
+  transition: background-color 0.2s ease;
+  font-family:'Mircrosoft JhenHei', sans-serif;
+  font-weight: 400;
+}
+
+.dropdown-menu a:hover {
+  background-color: #fcd5ec;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu.two-column li a {
+  display: block;
+  padding: 10.4px 14px;
+  color: #c25fa5;
+  font-family: 'Microsoft JhengHei' sans-serif;
+  text-decoration: none;
+  border-radius:  8px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu.two-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.dropdown-menu.two-column li a:hover {
+  background-color: #e9a9c2;
+}
+
+.dropdown-menu:hover {
+  display: block;
+}
+
+
+main {
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main img {
+  width: 100%;   /* 讓圖片自動填滿主區塊寬度 */
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+footer{
+  background-color: #d1c4e9;
+  color: #4a148c;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+.surprise-btn {
+  display: inline-block;
+  background-color: #ffccde;
+  color: #d86fa3;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.surprise-btn:hover {
+  background-color: #ffc0cb;
+  color: white;
+  transform: scale(1.05);
+}
